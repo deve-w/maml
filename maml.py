@@ -28,7 +28,7 @@ class MAML:
             self.loss_func = mse
             self.forward = self.forward_fc
             self.construct_weights = self.construct_fc_weights
-        elif FLAGS.datasource == 'omniglot' or FLAGS.datasource == 'miniimagenet':
+        elif FLAGS.datasource == 'omniglot_resized' or FLAGS.datasource == 'miniimagenet':
             self.loss_func = xent
             self.classification = True
             if FLAGS.conv:

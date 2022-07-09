@@ -260,7 +260,7 @@ def main():
     else:
         dim_input = data_generator.dim_input
 
-    if FLAGS.datasource == 'miniimagenet' or FLAGS.datasource == 'omniglot':
+    if FLAGS.datasource == 'miniimagenet' or FLAGS.datasource == 'omniglot_resized':
         tf_data_load = True
         num_classes = data_generator.num_classes
 
